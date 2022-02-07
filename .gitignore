@@ -1,0 +1,11 @@
+coverage
+dist
+docs
+node_modules
+
+# Keep environment variables out of version control
+.env
+
+# Log files as well.
+logs/*
+*.log
