@@ -8,7 +8,7 @@ const PORT = 7027;
 
 const bot = new Bot('');
 
-const origins = ['https://www.auracapital.io:7027'];
+const origins = ['https://www.auracapital.io'];
 const corsOptions = {
   origin: function (origin: string, callback: Function) {
     if (origins.indexOf(origin) !== -1 || !origin) {
