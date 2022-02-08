@@ -1,6 +1,6 @@
 {
   "name": "formsender",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple server to deliver Web forms.",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,13 @@
   "author": "Chua Chee How",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.2",
     "grammy": "^1.7.0",
     "mustache": "^4.2.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/mustache": "^4.1.2",
     "@types/node": "^17.0.15",
