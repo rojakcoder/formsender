@@ -6,7 +6,7 @@ import Mustache from 'mustache';
 const app = express();
 const PORT = 7027;
 
-const bot = new Bot('2107641114:AAG1NGCnIyC7FYTm3A7aXRlmAzuqjzUmpUM');
+const bot = new Bot('');
 
 const origins = ['https://www.auracapital.io:7027'];
 const corsOptions = {
@@ -32,7 +32,7 @@ app.post('/message', (req, res) => {
   const message = Mustache.render(letter, req.body);
 
   bot.api.sendMessage('1107012659', message);
-  return res.status(200).send();
+  return res.status(200).send('Message sent.');
 });
 
 app.listen(PORT, () => {
