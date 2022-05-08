@@ -1,19 +1,21 @@
 {
   "name": "formsender",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Simple server to deliver Web forms.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "ts-node --require dotenv/config src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Chua Chee How",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "grammy": "^1.7.0",
-    "mustache": "^4.2.0"
+    "mustache": "^4.2.0",
+    "toml": "^3.0.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
